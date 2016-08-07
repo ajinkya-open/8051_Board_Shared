@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:8051_dev-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,41 +29,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:8051_generic_89s51
 LIBS:7805_mod
-LIBS:HexConverter
-LIBS:MOTOR
-LIBS:ams1117_
-LIBS:arduinoNano
-LIBS:arduinouno
-LIBS:buzzer
-LIBS:cmos_cell
-LIBS:color_sensor
-LIBS:esp8266
-LIBS:fingerprintsensor
-LIBS:flex
-LIBS:ftdi232rl
-LIBS:hexconverter
-LIBS:i2cmemoty24ls256
-LIBS:l293d_modified
-LIBS:ldr
-LIBS:lm3915
-LIBS:oleddisplay
-LIBS:ov7670
-LIBS:pushbutton
-LIBS:relay
-LIBS:sd_card_module
-LIBS:servo
-LIBS:valve
-LIBS:xbee
-LIBS:max_232
-LIBS:0808
 LIBS:8051_dev-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -73,84 +46,80 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MAX_232 U?
-U 1 1 579B8F67
-P 5200 3450
-F 0 "U?" H 5200 3400 60  0000 C CNN
-F 1 "MAX_232" H 5200 4350 60  0000 C CNN
-F 2 "" H 5200 3450 60  0000 C CNN
-F 3 "" H 5200 3450 60  0000 C CNN
-	1    5200 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C?
+L C_Small C7
 U 1 1 579B9449
 P 4000 2800
-F 0 "C?" H 4010 2870 50  0000 L CNN
+F 0 "C7" H 4010 2870 50  0000 L CNN
 F 1 "0.1UF" H 4010 2720 50  0000 L CNN
-F 2 "" H 4000 2800 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4000 2800 50  0001 C CNN
 F 3 "" H 4000 2800 50  0000 C CNN
 	1    4000 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L C_Small C8
 U 1 1 579B946F
 P 4000 3100
-F 0 "C?" H 4010 3170 50  0000 L CNN
+F 0 "C8" H 4010 3170 50  0000 L CNN
 F 1 "0.1UF" H 4010 3020 50  0000 L CNN
-F 2 "" H 4000 3100 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4000 3100 50  0001 C CNN
 F 3 "" H 4000 3100 50  0000 C CNN
 	1    4000 3100
 	1    0    0    -1  
 $EndComp
-Text HLabel 6000 2700 2    60   Input Italic 0
-MAX_232_VCC
-Text HLabel 7450 2800 2    60   Input Italic 0
-MAX_232_GND
 $Comp
-L C_Small C?
+L C_Small C9
 U 1 1 579B97AB
 P 4800 2300
-F 0 "C?" H 4810 2370 50  0000 L CNN
+F 0 "C9" H 4810 2370 50  0000 L CNN
 F 1 "0.1UF" H 4810 2220 50  0000 L CNN
-F 2 "" H 4800 2300 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4800 2300 50  0001 C CNN
 F 3 "" H 4800 2300 50  0000 C CNN
 	1    4800 2300
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C?
+L C_Small C10
 U 1 1 579B9810
 P 5250 1950
-F 0 "C?" H 5260 2020 50  0000 L CNN
+F 0 "C10" H 5260 2020 50  0000 L CNN
 F 1 "0.1UF" H 5260 1870 50  0000 L CNN
-F 2 "" H 5250 1950 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5250 1950 50  0001 C CNN
 F 3 "" H 5250 1950 50  0000 C CNN
 	1    5250 1950
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X02 P?
+L CONN_01X02 P21
 U 1 1 579B9ACA
 P 6000 3850
-F 0 "P?" H 6000 4000 50  0000 C CNN
+F 0 "P21" H 6000 4000 50  0000 C CNN
 F 1 "MAX232_TX_RX" V 6100 3850 50  0000 C CNN
-F 2 "" H 6000 3850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6000 3850 50  0001 C CNN
 F 3 "" H 6000 3850 50  0000 C CNN
 	1    6000 3850
 	0    1    1    0   
 $EndComp
 $Comp
-L DB9 J?
+L DB9 J1
 U 1 1 579B9D4D
 P 7300 3400
-F 0 "J?" H 7300 3950 50  0000 C CNN
+F 0 "J1" H 7300 3950 50  0000 C CNN
 F 1 "DB9" H 7300 2850 50  0000 C CNN
-F 2 "" H 7300 3400 50  0000 C CNN
+F 2 "Connect:DB9FC" H 7300 3400 50  0001 C CNN
 F 3 "" H 7300 3400 50  0000 C CNN
 	1    7300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P22
+U 1 1 57A5DC1C
+P 7350 2150
+F 0 "P22" H 7350 2300 50  0000 C CNN
+F 1 "MAX_power_head" V 7450 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7350 2150 50  0001 C CNN
+F 3 "" H 7350 2150 50  0000 C CNN
+	1    7350 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -218,4 +187,25 @@ Wire Wire Line
 Wire Wire Line
 	6800 3000 6800 2800
 Connection ~ 6800 2800
+Wire Wire Line
+	7450 2800 7450 2550
+Wire Wire Line
+	7450 2550 7150 2550
+Wire Wire Line
+	7150 2550 7150 2200
+Wire Wire Line
+	6000 2700 6000 2100
+Wire Wire Line
+	6000 2100 7150 2100
+$Comp
+L MAX_232 U6
+U 1 1 57A62B03
+P 5200 3250
+F 0 "U6" H 5200 3200 60  0000 C CNN
+F 1 "MAX_232" H 5150 4100 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 5150 3300 60  0001 C CNN
+F 3 "" H 5150 3300 60  0000 C CNN
+	1    5200 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

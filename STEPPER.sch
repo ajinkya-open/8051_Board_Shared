@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:8051_dev-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,41 +29,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:8051_generic_89s51
 LIBS:7805_mod
-LIBS:HexConverter
-LIBS:MOTOR
-LIBS:ams1117_
-LIBS:arduinoNano
-LIBS:arduinouno
-LIBS:buzzer
-LIBS:cmos_cell
-LIBS:color_sensor
-LIBS:esp8266
-LIBS:fingerprintsensor
-LIBS:flex
-LIBS:ftdi232rl
-LIBS:hexconverter
-LIBS:i2cmemoty24ls256
-LIBS:l293d_modified
-LIBS:ldr
-LIBS:lm3915
-LIBS:oleddisplay
-LIBS:ov7670
-LIBS:pushbutton
-LIBS:relay
-LIBS:sd_card_module
-LIBS:servo
-LIBS:valve
-LIBS:xbee
-LIBS:max_232
-LIBS:0808
 LIBS:8051_dev-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 4 10
 Title ""
 Date ""
 Rev ""
@@ -73,26 +46,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ULN2003 U?
+L ULN2003-RESCUE-8051_dev U?
 U 1 1 579B37B4
 P 3750 3350
-F 0 "U?" H 3750 3450 50  0000 C CNN
+AR Path="/579B37B4" Ref="U?"  Part="1" 
+AR Path="/579B3797/579B37B4" Ref="U2"  Part="1" 
+F 0 "U2" H 3750 3450 50  0000 C CNN
 F 1 "ULN2003" H 3750 3250 50  0000 C CNN
-F 2 "" H 3750 3350 50  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 3750 3350 50  0001 C CNN
 F 3 "" H 3750 3350 50  0000 C CNN
 	1    3750 3350
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X07 P?
-U 1 1 579B3803
-P 2450 3250
-F 0 "P?" H 2450 3650 50  0000 C CNN
-F 1 "STEPPER_IN" V 2550 3250 50  0000 C CNN
-F 2 "" H 2450 3250 50  0000 C CNN
-F 3 "" H 2450 3250 50  0000 C CNN
-	1    2450 3250
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2650 2950 3100 2950
@@ -109,12 +73,12 @@ Wire Wire Line
 Wire Wire Line
 	2650 3550 3100 3550
 $Comp
-L CONN_01X07 P?
+L CONN_01X07 P11
 U 1 1 579B39F9
 P 5050 3250
-F 0 "P?" H 5050 3650 50  0000 C CNN
+F 0 "P11" H 5050 3650 50  0000 C CNN
 F 1 "STEPPER_OUT" V 5150 3250 50  0000 C CNN
-F 2 "" H 5050 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 5050 3250 50  0001 C CNN
 F 3 "" H 5050 3250 50  0000 C CNN
 	1    5050 3250
 	1    0    0    -1  
@@ -134,12 +98,12 @@ Wire Wire Line
 Wire Wire Line
 	4400 3550 4850 3550
 $Comp
-L CONN_01X02 P?
+L CONN_01X02 P10
 U 1 1 579B3D99
 P 3750 4350
-F 0 "P?" H 3750 4500 50  0000 C CNN
+F 0 "P10" H 3750 4500 50  0000 C CNN
 F 1 "STEPPER_POWER" V 3850 4350 50  0000 C CNN
-F 2 "" H 3750 4350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x01" H 3750 4350 50  0001 C CNN
 F 3 "" H 3750 4350 50  0000 C CNN
 	1    3750 4350
 	0    1    1    0   
@@ -157,4 +121,15 @@ STEPPER_GND
 Wire Wire Line
 	2600 4100 3200 4100
 Connection ~ 3200 4100
+$Comp
+L CONN_01X07 P9
+U 1 1 57A62266
+P 2450 3250
+F 0 "P9" H 2450 3650 50  0000 C CNN
+F 1 "Stepper_in" V 2550 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 2450 3250 50  0001 C CNN
+F 3 "" H 2450 3250 50  0000 C CNN
+	1    2450 3250
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
